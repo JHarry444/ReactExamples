@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AutoFilm from './loading_data/AutoFilm';
+// import Converter from './Converter';
+import Form from './forms/Form';
+import DataSet from './datasets/DataSet';
+import Routing from './routing/Routing';
+// import LifeCycle from './Lifecycle';
+// import Counter from './Counter';
+// import Bee from './Bee';
+// import Form from './Form copy';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  render() {
+    return (
+      <Routing/>
+    );
+  }
 }
 
 export default App;
