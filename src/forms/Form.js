@@ -19,9 +19,11 @@ export default class Form extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
+        this.props.history.push('/');
     }
 
     render() {
+        console.log(this.props);
         return (
             <form onSubmit={this.handleSubmit}>
                 <label for='user'>Username</label>

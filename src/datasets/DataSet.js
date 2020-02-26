@@ -9,7 +9,7 @@ export default function DataSet(props) {
     ]
 
     return (
-        data.map(person => 
-        <Data forename={person.forename} surname={person.surname} />)
-        );
+        data.map(person =>
+            <Data {...person} />)
+    );
 }
