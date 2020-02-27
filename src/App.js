@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Routing from './routing/Routing';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+
 class App extends React.Component {
 
   render() {
     return (
-      <Routing />
+      <p> James is a weapon</p>
     );
   }
 }
